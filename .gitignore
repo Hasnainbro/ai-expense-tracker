@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+
+# Environments
+.env
+credentials.json
+
+# VSCode / IDE
+.vscode/
+.idea/
+
+# Misc
+*.log
+
+/node_modules
