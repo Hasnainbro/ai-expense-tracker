@@ -97,6 +97,11 @@ OPENROUTER_API_KEY=your_openrouter_key
 GOOGLE_SHEET_ID=your_google_sheet_id
 ```
 
+## Screenshots
+![image](https://github.com/user-attachments/assets/cfcec590-e1d1-4317-a52b-fac18f527d0f)
+
+![image](https://github.com/user-attachments/assets/9c36d7ee-82f5-4310-ae50-966789715485)
+
 ## 🧪 Example Prompts
 - “Add ₹500 spent on groceries today.”
 
