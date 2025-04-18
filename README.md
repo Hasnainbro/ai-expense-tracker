@@ -1,14 +1,48 @@
-# AI-Powered Expense Tracker 💰🤖
+# 💸 AI Expense Tracker with Google Sheets Integration
 
-This is a Flask-based backend that allows users to track their expenses using natural language via AI (OpenRouter) and stores data in Google Sheets.
+An AI-powered expense tracker that lets users **chat with an assistant** to add, retrieve, and analyze expenses. The assistant interacts directly with **Google Sheets** to store and manage your data — just like a smart accountant.
 
-## Features
-- Add expenses with plain English
-- Auto-categorize and extract details
-- Get summaries by category
-- Google Sheets integration
-- AI intent detection
+## 🧠 Features
 
-## Setup
-- Add your `.env` file with API keys
-- Place `credentials.json` for Google Sheets access
+- 💬 **Chat-based interface** for managing expenses
+- 🧾 **Add and retrieve transactions** using natural language
+- 📊 **Analyze spending patterns**
+- 🗂️ Organized storage in **Google Sheets**
+- 🎨 Beautiful and responsive **React + Tailwind CSS** frontend
+- 🚀 Fast and scalable **Flask** backend API
+
+---
+
+## 🏗️ Tech Stack
+
+| Tech         | Usage                        |
+|--------------|------------------------------|
+| React        | Frontend UI                  |
+| Tailwind CSS | Styling                      |
+| Flask        | Backend API                  |
+| OpenRouter   | AI Assistant (e.g., Deepseek API) |
+| Google Sheets API | Expense data storage     |
+| GitHub       | Version Control              |
+
+---
+
+## 📂 Folder Structure
+
+```bash
+AI-Gsheet-Integration/
+│
+├── backend/                 # Flask backend API
+│   ├── app.py               # Main backend file
+│   └── utils/               # Utility functions (e.g., Google Sheets, AI)
+│
+├── Expense-tracker/        # React frontend
+│   ├── public/
+│   └── src/
+│       ├── components/
+│       ├── App.jsx
+│       └── index.js
+│
+├── .gitignore
+├── README.md
+└── requirements.txt
+```
