@@ -1,0 +1,166 @@
+/* Claude-inspired Chat UI */
+
+.chatbox {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #0f0f0f; /* Darker background */ 
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: hidden;
+    max-width: 900px; /* Limit maximum width */
+    margin: 0 auto; /* Center the chatbox */
+  }
+  
+  .chatbox-header {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #2d2d2d;
+    display: flex;
+    align-items: center;
+  }
+  
+  .chatbox-header h1 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  .chatbox-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: #0f0f0f; /* Consistent dark background */
+    gap: 24px; /* More space between message groups */
+  }
+  
+  .chatbox-message {
+    max-width: 90%;
+    margin-bottom: 0;
+    padding: 0;
+    border-radius: 0;
+    font-size: 20px;
+    line-height: 1.6;
+    animation: fadeIn 0.2s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .chatbox-message-user {
+    align-self: flex-start;
+    background-color: transparent; /* No background */
+    color: #d1d1d1; /* Lighter gray */
+    padding-left: 16px;
+    border-left: 2px solid #597ef7; /* Claude's accent color */
+  }
+  
+  .chatbox-message-bot {
+    align-self: flex-start;
+    background-color: transparent; /* No background */
+    color: #ffffff;
+    width: 100%; /* Full width for bot responses */
+  }
+  
+  .chatbox-input-container {
+    display: flex;
+    padding: 16px;
+    background-color: #0f0f0f;
+    border-top: 1px solid #2d2d2d;
+    position: relative;
+  }
+  
+  .chatbox-input {
+    flex-grow: 1;
+    padding: 14px 16px;
+    padding-right: 42px; /* Space for the button */
+    border: 1px solid #383838;
+    border-radius: 12px;
+    font-size: 15px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    transition: border-color 0.2s;
+    resize: none;
+    min-height: 24px;
+    max-height: 150px;
+  }
+  
+  .chatbox-input:focus {
+    outline: none;
+    border-color: #597ef7; /* Claude's accent color */
+    box-shadow: 0 0 0 1px rgba(89, 126, 247, 0.3);
+  }
+  
+  .chatbox-input::placeholder {
+    color: #8e8e8e;
+  }
+  
+  .chatbox-send-button {
+    position: absolute;
+    right: 26px;
+    bottom: 26px;
+    background-color: #597ef7; /* Claude's accent color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .chatbox-send-button:hover {
+    background-color: #4a6bda;
+  }
+  
+  /* Remove the additional actions bar */
+  .chatbox-actions {
+    display: none;
+  }
+  
+  /* Custom scrollbar */
+  .chatbox-messages::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  .chatbox-messages::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .chatbox-messages::-webkit-scrollbar-thumb {
+    background-color: #3a3a3a;
+    border-radius: 2px;
+  }
+  
+  .chatbox-messages::-webkit-scrollbar-thumb:hover {
+    background-color: #4a4a4a;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 900px) {
+    .chatbox {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .chatbox-message {
+      max-width: 100%;
+    }
+    
+    .chatbox-input-container {
+      padding: 12px;
+    }
+    
+    .chatbox-send-button {
+      right: 22px;
+      bottom: 22px;
+    }
+  }

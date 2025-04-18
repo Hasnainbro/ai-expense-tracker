@@ -1,0 +1,39 @@
+/* filepath: /d:/Vs/Project/expense-tracker/src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Custom base styles */
+}
+
+@layer components {
+  .chatbox {
+    @apply flex flex-col h-full border rounded-lg p-4 bg-gray-100;
+  }
+  .chatbox-messages {
+    @apply flex-1 overflow-y-auto p-2;
+  }
+  .chatbox-message {
+    @apply p-2 m-1 rounded-lg;
+  }
+  .chatbox-message-user {
+    @apply bg-blue-500 text-white self-end;
+  }
+  .chatbox-message-bot {
+    @apply bg-gray-300;
+  }
+  .chatbox-input-container {
+    @apply flex p-2 border-t;
+  }
+  .chatbox-input {
+    @apply flex-1 p-2 border rounded;
+  }
+  .chatbox-send-button {
+    @apply ml-2 p-2 bg-blue-500 text-white rounded;
+  }
+}
+
+@layer utilities {
+  /* Custom utility styles */
+}
