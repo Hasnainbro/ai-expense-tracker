@@ -126,3 +126,5 @@ Contributions and feedback are welcome!
 ## 📄 License
 This project is licensed under the MIT License.
 
+## Support
+if any problem occurs while setting up the project, feel free to mail me at hasnainkherani1@gmail.com, I'll surely assist you on setting up the project perfectly.
