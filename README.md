@@ -115,6 +115,7 @@ GOOGLE_SHEET_ID=your_google_sheet_id
 
 ## 🙌 Author
 Made with ❤️ by Hasnain Kherani
+
 Contributions and feedback are welcome!
 
 ## 📄 License
